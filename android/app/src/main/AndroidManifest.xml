@@ -1,6 +1,6 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android">
     <application
-        android:label="dream_encounter"
+        android:label="梦遇记"
         android:name="${applicationName}"
         android:icon="@mipmap/ic_launcher">
         <activity
