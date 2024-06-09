@@ -13,7 +13,6 @@ class DreamRecordScreen extends StatefulWidget{
 class _DreamRecordScreenState extends State<DreamRecordScreen> {
   @override
   Widget build(BuildContext context) {
-    // TODO: implement build
     return Container(
       color: Colors.red,
     );

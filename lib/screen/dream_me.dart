@@ -13,7 +13,8 @@ class DreamMeScreen extends StatefulWidget{
 class _DreamMeScreenState extends State<DreamMeScreen> {
   @override
   Widget build(BuildContext context) {
-    // TODO: implement build
-    throw UnimplementedError();
+    return Container(
+      color: Colors.blue,
+    );
   }
 }

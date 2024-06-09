@@ -78,12 +78,35 @@ class _MyHomePageState extends State<MyHomePage> {
         child: Row(
           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
           children: [
-            _HomeTabButton(groupValue: _selectTab, value: HomeTab.record, icon: Icon(Icons.list_rounded), onPressed: (){}),
-            _HomeTabButton(groupValue: _selectTab, value: HomeTab.me, icon: Icon(Icons.show_chart_rounded), onPressed: (){})
+            _HomeTabButton(
+                groupValue: _selectTab,
+                value: HomeTab.record,
+                icon: Icon(Icons.list_rounded),
+                onPressed: (){
+                  _switchTab(HomeTab.record);
+                }
+            ),
+            _HomeTabButton(
+                groupValue: _selectTab,
+                value: HomeTab.me,
+                icon: Icon(Icons.show_chart_rounded),
+                onPressed: (){
+                  _switchTab(HomeTab.me);
+                }
+            )
           ],
         ),
       ),
     );
+  }
+
+  void _switchTab(HomeTab tab) {
+    if (tab == _selectTab) {
+      return;
+    }
+    setState(() {
+      _selectTab = tab;
+    });
   }
 }
 
